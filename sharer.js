@@ -142,6 +142,12 @@
               url: this.getValue('url'),
             },
           },
+          telegrambot: {
+            shareUrl: 'https://t.me/' + this.getValue('bot'),
+            params: {
+              start: this.getValue('start'),
+            },
+          },
           viber: {
             shareUrl: 'viber://forward',
             params: {

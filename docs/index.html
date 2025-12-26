@@ -84,6 +84,7 @@
         <li><a href="#email">Email</a></li>
         <li><a href="#whatsapp">Whatsapp</a></li>
         <li><a href="#telegram">Telegram</a></li>
+        <li><a href="#telegrambot">Telegram Bot</a></li>
         <li><a href="#viber">Viber</a></li>
         <li><a href="#pinterest">Pinterest</a></li>
         <li><a href="#tumblr">Tumblr</a></li>
@@ -263,6 +264,24 @@ $(elem).on('click', function() {
 
         <button class="button" data-sharer="telegram" data-title="Checkout Sharer.js!"
             data-url="https://ellisonleao.github.io/sharer.js/">Share on Telegram</button>
+      </div>
+
+      <div class="component">
+        <h2>
+          <a id="telegrambot" class="anchor" href="#telegrambot" ></a>Telegram Bot</h2>
+
+        <p>Available custom attributes:</p>
+
+        <ul>
+          <li><code>data-bot</code> (required: bot username without @)</li>
+          <li><code>data-start</code> (optional: deep-link payload for <code>start</code>)</li>
+        </ul>
+
+        <pre><code class="language-markup">&lt;button class="button" data-sharer="telegrambot" data-bot="SharerPreviewBot" data-start="promo"&gt;Start bot&lt;/button&gt;</code></pre>
+
+        <p>Example:</p>
+
+        <button class="button" data-sharer="telegrambot" data-bot="SharerPreviewBot" data-start="promo">Start bot</button>
       </div>
 
       <div class="component">
