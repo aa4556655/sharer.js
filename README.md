@@ -10,3 +10,32 @@ Sharer.js is a very tiny JS library to create custom social share components on 
 ## Documentation
 
 Checkout [the docs page](https://ellisonleao.github.io/sharer.js/) for more info about installing and usage.
+
+## Local n8n setup (Docker + Postgres)
+
+This repo includes a ready-to-run `docker-compose.yml` for running n8n locally with a
+persistent Postgres database.
+
+1. Create an environment file:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Start the stack:
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. Open n8n at:
+
+   ```
+   http://localhost:5678
+   ```
+
+To stop the services:
+
+```bash
+docker compose down
+```
